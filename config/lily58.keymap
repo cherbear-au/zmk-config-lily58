@@ -91,8 +91,6 @@
 &kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp V      &kp B      &kp CAPSLOCK    &kp DELETE  &kp N   &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                                   &kp LALT  &kp SPACE  &kp ENTER  &mo 1           &kp SPACE   &mo 2   &kp ESCAPE  &kp RGUI
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         adjust_layer {
