@@ -17,59 +17,7 @@
 #define extra_layer 4
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        equals {
-            bindings = <&kp EQUAL>;
-            key-positions = <19 20>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <31 32>;
-        };
-
-        plus {
-            bindings = <&kp RS(EQUAL)>;
-            key-positions = <32 33>;
-        };
-
-        underscore {
-            bindings = <&kp RS(MINUS)>;
-            key-positions = <45 46>;
-        };
-
-        openparenthesis {
-            bindings = <&kp RS(NUMBER_9)>;
-            key-positions = <20 21>;
-        };
-
-        closeparenthesis {
-            bindings = <&kp RS(NUMBER_0)>;
-            key-positions = <22 21>;
-        };
-
-        exclamation {
-            bindings = <&kp RS(NUMBER_1)>;
-            key-positions = <13 14>;
-        };
-
-        at {
-            bindings = <&kp RS(NUMBER_2)>;
-            key-positions = <14 15>;
-        };
-
-        hashtag {
-            bindings = <&kp RS(NUMBER_3)>;
-            key-positions = <15 16>;
-        };
-
-        dollarsign {
-            bindings = <&kp RS(NUMBER_4)>;
-            key-positions = <16 17>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
