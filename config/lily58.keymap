@@ -52,14 +52,12 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp F11  &kp F1            &kp F3            &kp F3            &kp F4            &kp F5                              &kp F6            &kp F7             &kp F8                &kp F9            &kp F10           &kp F12
-&trans   &kp RS(NUMBER_1)  &kp RS(NUMBER_2)  &kp RS(NUMBER_3)  &kp RS(NUMBER_4)  &kp RS(NUMBER_5)                    &kp RS(NUMBER_6)  &kp RS(NUMBER_7)   &kp RS(NUMBER_8)      &kp RS(NUMBER_9)  &kp RS(NUMBER_0)  &kp BACKSPACE
-&trans   &trans            &trans            &kp UP_ARROW      &trans            &kp PAGE_UP                         &trans            &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans            &trans            &trans
-&trans   &trans            &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW   &kp PAGE_DOWN     &trans    &trans  &kp K_MUTE        &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans            &trans            &trans
-                                             &trans            &trans            &trans            &trans    &trans  &trans            &trans             &trans
+&kp F11  &kp F1    &kp F3          &kp F3          &kp F4           &kp F5                           &kp F6     &kp F7         &kp F8        &kp F9                &kp F10                &kp F12
+&trans   &kp EXCL  &kp AT          &kp HASH        &kp DOLLAR       &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
+&trans   &trans    &trans          &kp UP_ARROW    &trans           &kp PAGE_UP                      &trans     &kp EQUAL      &trans        &trans                &trans                 &trans
+&trans   &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans    &trans  &trans     &trans         &trans        &trans                &trans                 &trans
+                                   &trans          &trans           &trans         &trans    &trans  &trans     &trans         &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
@@ -79,8 +77,6 @@
 &trans          &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans    &trans  &trans          &kp MINUS  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE
                                                      &trans             &trans        &trans        &trans    &trans  &trans          &trans     &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -100,8 +96,6 @@
 &kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
                            &trans   &trans   &trans   &trans    &trans  &trans       &trans     &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         extra_layer {
@@ -121,8 +115,6 @@
 &trans  &trans          &trans          &trans           &trans  &msc SCRL_UP    &mkp LCLK    &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans
                                         &trans           &trans  &trans          &trans       &trans     &trans  &trans  &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
